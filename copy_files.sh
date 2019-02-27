@@ -1,7 +1,10 @@
 adb shell mount -o remount,rw / &&
 adb push wpa_cli /bin/wpa_cli &&
+adb shell chmod +x /bin/wpa_cli &&
 adb push wpa_passphrase /bin/wpa_passphrase &&
+adb shell chmod +x /bin/wpa_passphrase &&
 adb push wpa_supplicant /bin/wpa_supplicant &&
+adb shell chmod +x /bin/wpa_supplicant &&
 adb push shortpress_3.sh /bin/onoffbutton/shortpress_3.sh &&
 adb shell chmod +x /bin/onoffbutton/shortpress_3.sh &&
 adb push shortpress_5.sh /bin/onoffbutton/shortpress_5.sh &&
